@@ -1,0 +1,25 @@
+-- ======================
+-- EMPLOYEES TABLE SCHEMA
+-- ======================
+
+CREATE TABLE employees (
+    emp_id INT PRIMARY KEY,              -- Unique identifier for each employee
+    emp_name VARCHAR(100) NOT NULL,      -- Employee full name
+    emp_department VARCHAR(50) NOT NULL, -- Department the employee belongs to
+    emp_salary DECIMAL(10, 2) NOT NULL   -- Salary of the employee
+);
+
+-- Sample departments: HR, IT, Finance, Marketing
+
+-- =====================
+-- MANAGERS TABLE SCHEMA
+-- =====================
+
+CREATE TABLE managers (
+    mgr_id INT PRIMARY KEY,              -- Unique identifier for each manager
+    mgr_name VARCHAR(100) NOT NULL,      -- Manager full name
+    mgr_department VARCHAR(50) NOT NULL, -- Department the manager oversees
+    mgr_salary DECIMAL(10, 2) NOT NULL   -- Salary of the manager
+);
+
+-- Sample departments: HR, IT, Finance, Marketing, Sales
